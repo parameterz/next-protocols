@@ -7,7 +7,7 @@ import NavigationControls from '../components/NavigationControls';
 import { getConfig } from '../utils/getConfig';
 import '../styles/global.css';
 
-export default function HomePage() {
+const HomePage = () => {
   const [protocols, setProtocols] = useState([]);
   const [currentProtocol, setCurrentProtocol] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,7 +16,7 @@ export default function HomePage() {
   const config = getConfig();
 
   useEffect(() => {
-    fetch('/protocols/protocolList.json')
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/protocols/protocolList.json`)
       .then(res => res.json())
       .then(data => setProtocols(data));
   }, []);
@@ -50,6 +50,7 @@ export default function HomePage() {
 
   return (
     <div>
+      <h1>Echo Protocol Viewer</h1>
       <ProtocolSelector protocols={protocols} onSelect={handleProtocolSelect} />
       {currentImage && (
         <>
@@ -79,4 +80,6 @@ export default function HomePage() {
       </footer>
     </div>
   );
-}
+};
+
+export default HomePage;
