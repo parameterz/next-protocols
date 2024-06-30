@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Next.js App</title>
+        <title>Visual Protocol App (Next.js)</title>
       </head>
       <body>
         <header>
