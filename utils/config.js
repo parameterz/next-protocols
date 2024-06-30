@@ -1,9 +1,20 @@
 // utils/config.js
 
 const configInfo = {
-    version: '.0.1.1',
-    date: '2024-06-30 12:09',
-    author: 'Dan Dyar, MA, RDCS, FASE'
+    author: 'Dan Dyar, MA, RDCS, FASE',
+    versions: [
+      {
+        date: "6/30/24; 3:12 PM",
+        version: "0.1.2",
+        notes: "refactored version, LAST_UPDATED"
+      },
+      {
+        date: "6/30/24",
+        version: "0.1.1",
+        notes: "uploaded to Amplify, forgetting about forcing it to be a static site"
+      }
+
+    ]
   };
   
   export default configInfo;
