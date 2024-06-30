@@ -1,10 +1,9 @@
 // next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
-    trailingSlash: true, // Optional
+    trailingSlash: true, // Optional: Use trailing slashes in the URLs
     images: {
-      unoptimized: true, // Optional
+      unoptimized: true, // Optional: Disable image optimization if not needed
     },
   };
   
