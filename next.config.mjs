@@ -2,9 +2,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    trailingSlash: true, // Optional: Use trailing slashes in the URLs
+    trailingSlash: true, // Optional
     images: {
-      unoptimized: true, // Optional: Disable image optimization if not needed
+      unoptimized: true, // Optional
     },
   };
   
