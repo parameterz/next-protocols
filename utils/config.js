@@ -1,7 +1,8 @@
 // utils/config.js
 
 const configInfo = {
-    author: 'Dan Dyar, MA, RDCS, FASE',
+    author1: 'Dan Dyar, MA, RDCS, FASE',
+    author2: "Lisa Vargas, AS, RDCS, FASE",
     versions: [
       {
         date: "6/30/24; 4:50PM",

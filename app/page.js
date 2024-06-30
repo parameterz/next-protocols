@@ -73,7 +73,9 @@ const HomePage = () => {
       )}
       <footer className="build-info">
         Build Version: {configInfo.versions[0].version} | Build Date: {configInfo.versions[0].date}
-        <p>{configInfo.author}</p>
+        <p>{configInfo.author1}</p>
+        <p>&</p>
+        <p>{configInfo.author2}</p>
       </footer>
     </div>
   );
