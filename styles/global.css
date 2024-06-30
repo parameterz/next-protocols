@@ -1,0 +1,112 @@
+:root {
+    --bg-color: #1e1e1e; /* Dark background color */
+    --text-color: #e0e0e0; /* Light text color */
+    --header-bg: #066; /* Slightly lighter background for header */
+    --button-bg: #3e3e3e; /* Dark background for buttons */
+    --button-hover-bg: #4e4e4e; /* Slightly lighter on hover */
+    --input-bg: #3e3e3e; /* Background for input elements */
+    --input-hover-bg: #4e4e4e; /* Hover background for input elements */
+    --border-radius: 5px; /* Border radius for elements */
+    --font-family: Arial, sans-serif; /* Font family */
+  }
+  
+  body {
+    font-family: var(--font-family);
+    margin: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+
+  h1, h2, h3, p {
+    color: var(--text-color);
+  }
+  
+  header {
+    background-color: var(--header-bg);
+    text-align: center;
+    padding: 2 px;
+    border-radius: 50% ;
+  }
+
+  
+  button, select {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button:hover, select:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  select {
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    -moz-appearance: none; /* Remove default styling in Firefox */
+    appearance: none; /* Remove default styling */
+    outline: none; /* Remove the outline */
+  }
+  
+  .description {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .description h2 {
+    font-size: 18px; /* Adjust the size as needed */
+  }
+  
+  .description p {
+    font-size: 16px; /* Adjust the size as needed */
+    margin: 5px 0; /* Adjust the margin as needed */
+  }
+  
+  .imageViewer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #2e2e2e; /* Slightly lighter dark background for the image viewer */
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .navigationControls {
+    display: flex;
+    justify-content: center; /* Center the controls */
+    margin-top: 20px;
+    text-align: center; /* Ensure text is centered */
+  }
+  
+  .navigationControls button, .navigationControls input {
+    margin: 5px 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: var(--border-radius);
+  }
+  
+  .navigationControls button:hover, .navigationControls input:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  video, img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .build-info {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #a0a0a0; /* Light gray text color for build info */
+    background-color: var(--bg-color);
+    padding: 5px 0;
+  }
+  

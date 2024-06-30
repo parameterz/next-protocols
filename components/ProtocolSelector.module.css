@@ -1,0 +1,19 @@
+/* components/ProtocolSelector.module.css */
+.protocolSelector {
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: var(--button-bg); /* Use the dark background for buttons */
+  color: var(--text-color); /* Use the light text color */
+  border: none;
+  border-radius: var(--border-radius);
+  -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+  -moz-appearance: none; /* Remove default styling in Firefox */
+  appearance: none; /* Remove default styling */
+  outline: none; /* Remove the outline */
+}
+
+.protocolSelector:hover {
+  background-color: var(--button-hover-bg); /* Slightly lighter on hover */
+}
