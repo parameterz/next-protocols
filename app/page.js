@@ -4,16 +4,13 @@ import React, { useState, useEffect } from 'react';
 import ProtocolSelector from '../components/ProtocolSelector';
 import ImageViewer from '../components/ImageViewer';
 import NavigationControls from '../components/NavigationControls';
-import { getConfig } from '../utils/getConfig';
+import configInfo from '../utils/config';
 import '../styles/global.css';
 
 const HomePage = () => {
   const [protocols, setProtocols] = useState([]);
   const [currentProtocol, setCurrentProtocol] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Load configuration
-  const config = getConfig();
 
   useEffect(() => {
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/protocols/protocolList.json`)
@@ -75,8 +72,8 @@ const HomePage = () => {
         </div>
       )}
       <footer className="build-info">
-        Build Version: {config.buildVersion} | Build Date: {config.buildDate}
-        <p>{config.author}</p>
+        Build Version: {configInfo.version} | Build Date: {configInfo.date}
+        <p>{configInfo.author}</p>
       </footer>
     </div>
   );
