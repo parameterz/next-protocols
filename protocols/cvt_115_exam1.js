@@ -1,0 +1,27 @@
+const cvt_115_exam1 = [
+        "LV increased depth, 2D (clip)",
+        "LV optimized sector depth, 2D (clip)",
+        "LV optimized sector depth 2D + color MV/AOV (clip)",
+        "Linear measurements: RVIDd, IVSd, LVEDd, LVPWd (still)",
+        "Linear measurement LVIDs (still)",
+        "M-mode AOV & LA (still)",
+        "M-mode MV (still)",
+        "M-mode LV (still)",
+        "Zoomed MV, 2D (be sure to include LVOT as landmark) (clip)",
+        "Zoomed MV, 2D + color (clip)",
+        "Linear measurement zoomed LVOT & AOV Annulus diameter (mid-systole) (still)",
+        "Zoomed LVOT/AV, 2D + color (clip)",
+        "Zoomed SOV/STJ /AscAo, 2D (clip)",
+        "Linear measurement SOV & STJ diameter (end-diastole) (still)",
+        "Zoomed SOV/STJ /AscAo, 2D + color (clip)",
+        "Focused or Zoom Asc Ao, 2D (clip)",
+        "Linear measurement Asc Ao diameter (end-diastole) (still)",
+        "RV inflow, 2D (show TV POSTERIOR leaflet) (clip)",
+        "RV inflow, 2D + color (clip)",
+        "RV inflow (if TR present, measure CW Doppler peak velocity) (still)",
+        "RVOT/Sub Pulmonic, 2D (clip)",
+        "RVOT/Sub Pulmonic, 2D + color (clip)",
+        "PA CW Doppler (measure PR @ end-diastole if present) (still)",
+]
+
+export default cvt_115_exam1;
