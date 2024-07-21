@@ -26,22 +26,22 @@ const Build = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>Select Views for Derived Protocol</h1>
-      <table>
+      <table role="grid" style={styles.table}>
         <thead>
           <tr>
-            <th>View</th>
-            <th>Description</th>
-            <th>Select</th>
+            <th style={styles.th}>View</th>
+            <th style={styles.th}>Description</th>
+            <th style={styles.th}>Select</th>
           </tr>
         </thead>
         <tbody>
           {canonicalProtocol.map((item, index) => (
-            <tr key={index}>
-              <td>{item.view}</td>
-              <td>{item.description}</td>
-              <td>
+            <tr key={index} style={index % 2 === 0 ? styles.evenRow : styles.oddRow}>
+              <td style={styles.td}>{item.view}</td>
+              <td style={styles.td}>{item.description}</td>
+              <td style={styles.td}>
                 <input
                   type="checkbox"
                   checked={selectedViews.includes(index)}
@@ -52,15 +52,42 @@ const Build = () => {
           ))}
         </tbody>
       </table>
-      <button onClick={generateDerivedProtocol}>Generate Derived Protocol</button>
+      <button className="primary" onClick={generateDerivedProtocol}>Generate Derived Protocol</button>
       {output && (
         <div>
           <h2>Derived Protocol Output</h2>
-          <pre>{output}</pre>
+          <pre style={styles.pre}>{output}</pre>
         </div>
       )}
     </div>
   );
+};
+
+const styles = {
+  table: {
+    width: '100%',
+    borderCollapse: 'collapse',
+  },
+  th: {
+    padding: '10px',
+    border: '1px solid #ddd',
+    backgroundColor: '#f4f4f4',
+  },
+  td: {
+    padding: '10px',
+    border: '1px solid #ddd',
+  },
+  evenRow: {
+    backgroundColor: '#f9f9f9',
+  },
+  oddRow: {
+    backgroundColor: '#ffffff',
+  },
+  pre: {
+    backgroundColor: '#f4f4f4',
+    padding: '10px',
+    borderRadius: '5px',
+  },
 };
 
 export default Build;
