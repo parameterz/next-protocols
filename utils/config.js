@@ -5,6 +5,11 @@ const config = {
   author2: "Lisa Vargas, AS, RDCS, FASE",
   versions: [
     {
+      date: "7/21/2024",
+      version: "0.1.5",
+      notes: "adds 221 protocols"
+    },
+    {
       date: "7/20/2024",
       version: "0.1.4",
       notes: "refactoring away from json"
