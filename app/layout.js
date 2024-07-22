@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Visual Protocol App (Next.js)</title>
+        <title>GC Visual Protocol App</title>
 
       </head>
       <body>
