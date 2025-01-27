@@ -1,4 +1,4 @@
-const cvt_221_parast_apicals = 
+const parast_apicals = 
 [
     "LV increased depth, 2D (clip)",
     "LV optimized sector depth, 2D (clip)",
@@ -85,4 +85,4 @@ const cvt_221_parast_apicals =
     "Apical long-axis ventricular focus (adjusted sector width and depth), 2D (clip)"
   ]
 
-  export default cvt_221_parast_apicals
+  export default parast_apicals

@@ -5,6 +5,11 @@ const config = {
   author2: "Lisa Vargas, AS, ACS, RDCS, FASE",
   versions: [
     {
+      date: "1/27/2025",
+      version: "0.1.6",
+      notes: "cleaned up the code, protocols"
+    },
+    {
       date: "7/21/2024",
       version: "0.1.5",
       notes: "adds 221 protocols"
@@ -30,11 +35,6 @@ const config = {
       notes: "uploaded to Amplify, forgetting about forcing it to be a static site"
     }
   ],
-  protocolsConfig: [
-    { name: 'Full Protocol', file: 'canonicalProtocol' },
-    { name: '115 2D Parasternal Protocol', file: 'cvt_115_exam1' }
-    // Add more protocols here
-  ]
 };
 
 export default config;

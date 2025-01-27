@@ -1,4 +1,4 @@
-const cvt_221_subcostals =
+const subcostals =
 [
     "Transv of Abdomen, 2D (identify DAO & IVC) (clip)",
     "Transv of Abdomen, 2D + color (clip)",
@@ -22,4 +22,4 @@ const cvt_221_subcostals =
     "LV SAX, 2D + color (clip)"
   ]
 
-export default cvt_221_subcostals
+export default subcostals
