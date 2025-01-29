@@ -74,10 +74,11 @@ const HomePage = () => {
         </div>
       )}
       <footer className="build-info">
-        Build: {config.versions[0].version}; {config.versions[0].date}
+        Build: {config.versions[0].version}; &copy; {config.versions[0].date}
         <p>{config.author1}</p>
         <p>&</p>
         <p>{config.author2}</p>
+        <p>All Rights Reserved</p>
       </footer>
     </div>
   );
